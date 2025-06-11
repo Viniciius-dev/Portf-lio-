@@ -1,0 +1,168 @@
+
+body {
+    background-image: url('https://i.pinimg.com/originals/eb/7f/0c/eb7f0ccf927c93aeedbb3cf100d6fd29.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Faz o body ocupar 100% da altura da tela */
+    margin: 0;
+}
+
+.header {
+    background-color: #e9e1e1;
+    padding: 10px 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+.intagran {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1500px;
+
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar li a {
+    align-items: center;
+    list-style: none;
+    gap: 200px;
+}
+
+.projects-button {
+    padding: 9px 15px;
+    border: 2px solid rgba(190, 184, 190, 0.171);
+    border-radius: 10px;
+    font-size: 16px;
+    background: white;
+    color: rgb(12, 3, 12);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    
+}
+
+.projects-button:hover {
+    background-color: rgba(190, 184, 190, 0.171);
+    color: black;
+}
+
+.contact-button {
+    padding: 9px 15px;
+    border: 2px solid rgba(230, 14, 230, 0.788);
+    border-radius: 10px;
+    font-size: 16px;
+    background: white;
+    color: purple;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: rgba(230, 14, 230, 0.1);
+    color: rgb(97, 3, 97);
+}
+
+
+
+.sobre  h1{
+    margin: button;
+    padding: 20px;
+    text-align: center;
+    font-size: 50px ;
+    color: #f5deb3c7;
+    
+}
+
+.sobre p {
+     margin: button;
+    padding: 20px;
+    text-align: center;
+    font-size: 50px ;
+    color: #ffff;
+}
+
+.sobre h2 {
+    margin: button;
+    padding: 20px;
+    text-align: center;
+    font-size: 120px ;
+    color: rgba(252, 252, 252, 0.404);
+}
+
+.aba {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.ativa {
+  display: block;
+  opacity: 1;
+}
+
+
+
+
+.aba { 
+margin: button;
+    padding: 20px;
+    text-align: center;
+    font-size: 45px ;
+    color: #f5deb3c7;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .intagran {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-button, .contact-button {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li a {
+        text-align: center;
+        width: 100%;
+    }
+
+    .sobre h1, .sobre p, .sobre h2 {
+        font-size: 30px; /* Ajuste o tamanho da fonte para telas menores */
+    }
+
+    .aba {
+        font-size: 20px; /* Ajuste o tamanho da fonte para telas menores */
+    }
+   
+    .header {
+        padding: 10px 10px; /* Ajuste o padding para telas menores */
+    }
+
+    .body {
+        padding: 0 10px; /* Ajuste o padding do body para telas menores */
+    }
+}
